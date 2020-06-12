@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:shapeAppearance="@style/ShapeAppearance.MyApp.MediumComponent"
+    app:cardElevation="4dp"
+    app:behavior_peekHeight="56dp"
+    android:id="@+id/bottom_sheet"
+    app:behavior_hideable="false"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:layout_height="540dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="139dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="139dp"
+            android:backgroundTint="@color/grey_trans"
+            android:background="@drawable/round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="QR Code Saya"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <ImageView
+            android:id="@+id/qr_code"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/state_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Anda belum di kantor"
+            android:textColor="@color/grey"
+            app:layout_constraintBottom_toBottomOf="@+id/qr_code"
+            app:layout_constraintEnd_toEndOf="@+id/qr_code"
+            app:layout_constraintStart_toStartOf="@+id/qr_code"
+            app:layout_constraintTop_toTopOf="@+id/qr_code" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/office_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Anda berada di Kantor C"
+            android:layout_marginTop="24dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/qr_code"
+            app:layout_constraintStart_toStartOf="@+id/qr_code"
+            app:layout_constraintTop_toBottomOf="@+id/qr_code" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

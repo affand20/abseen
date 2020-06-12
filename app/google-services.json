@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "852194659282",
+    "firebase_url": "https://abseen-f3e3e.firebaseio.com",
+    "project_id": "abseen-f3e3e",
+    "storage_bucket": "abseen-f3e3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852194659282:android:157bdce21589168d56160b",
+        "android_client_info": {
+          "package_name": "id.trydev.abseen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852194659282-k8k9198mdrsj4qelg2n947ehs3vc75pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDYmm50O6OAKUiYiAGwxHDfL7y320K_d8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852194659282-k8k9198mdrsj4qelg2n947ehs3vc75pr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
